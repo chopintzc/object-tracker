@@ -93,10 +93,10 @@ public class ObjectTracker {
 		    Core.inRange(hsv_image, hsv_min_green, hsv_max_green, thresholded_green);
 		    
 		    /* image processing to obtain a smoothed boundaries */
-		    Imgproc.erode(thresholded_red, thresholded_red, Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new org.opencv.core.Size(8,8)));
+		    //Imgproc.erode(thresholded_red, thresholded_red, Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new org.opencv.core.Size(8,8)));
 			Imgproc.dilate(thresholded_red, thresholded_red, Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new org.opencv.core.Size(8, 8)));
 			Imgproc.GaussianBlur(thresholded_red, thresholded_red, new org.opencv.core.Size(9,9),0,0);
-			Imgproc.erode(thresholded_green, thresholded_green, Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new org.opencv.core.Size(8,8)));
+			//Imgproc.erode(thresholded_green, thresholded_green, Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new org.opencv.core.Size(8,8)));
 			Imgproc.dilate(thresholded_green, thresholded_green, Imgproc.getStructuringElement(Imgproc.MORPH_RECT, new org.opencv.core.Size(8, 8)));
 			Imgproc.GaussianBlur(thresholded_green, thresholded_green, new org.opencv.core.Size(9,9),0,0);
 			
