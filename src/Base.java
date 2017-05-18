@@ -1,4 +1,4 @@
-package recognization;
+package src;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -47,7 +47,7 @@ public class Base
 	
     public Base()
     {
-    	m = new Map("C:/Users/charlotte/workspace/demo/src/final_stuff/store.png");
+    	m = new Map("image\store.png");
     	
     	double x = 170;
     	double y = 135;

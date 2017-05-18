@@ -1,4 +1,4 @@
-package recognization;
+package src;
 import java.util.ArrayList;
 /*keeps track of how and what should be displayed per store map*/
 

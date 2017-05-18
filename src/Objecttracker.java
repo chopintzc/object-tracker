@@ -5,7 +5,7 @@
  * @since 2016-06-18
  */
 
-package recognization;
+package src;
 
 import org.opencv.core.Core;
 import org.opencv.core.Point;
